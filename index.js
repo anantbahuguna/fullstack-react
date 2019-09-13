@@ -6,7 +6,7 @@ require('./models/User')
 require('./services/passport.js')
 
 
-mongoose.connect('keys.mongoURI',{ useNewUrlParser: true },() => {
+mongoose.connect(keys.mongoURI,{ useNewUrlParser: true },() => {
   console.log('connected to db')
 })
 
